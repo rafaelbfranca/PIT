@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_tela_b_instrucoes"
+    tools:context="com.jockerbitgames.palpitedobrasileirao.B_instrucoes"
+    tools:ignore="Overdraw">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adsInstrucoes"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#55000000"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/active_ad_unit_ID_banner_2_instrucoes"/>
+
+    <LinearLayout
+        android:id="@+id/blocoInstrucoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/instrucoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/instrucoes"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:background="#55000000" />
+
+        <TextView
+            android:id="@+id/textoInstrucoes01"
+            android:contentDescription="textoInstrucoes01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/instrucoes"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="#55000000"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textoInstrucoes02"
+            android:contentDescription="textoInstrucoes02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="5dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/instrucoes"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:background="#55000000"
+            tools:ignore="HardcodedText" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/textoInstrucoes03"
+                android:contentDescription="textoInstrucoes03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:padding="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/instrucoes"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:background="#55000000"
+                tools:ignore="HardcodedText" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blocoCreditos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="15dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Créditos"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:background="#55000000"
+            tools:ignore="HardcodedText" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/textoCreditos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:padding="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Créditos"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:background="#55000000"
+                tools:ignore="HardcodedText" />
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

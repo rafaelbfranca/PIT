@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_tela_e_meus_grupos"
+    tools:context="com.jockerbitgames.palpitedobrasileirao.E_meus_grupos"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/meus_grupos"
+        android:textColor="#42A5F5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ano_do_campeonato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/ano_do_campeonato"
+        android:textColor="#42A5F5"
+        android:textSize="50sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageButton
+            android:id="@+id/exibir_grupo"
+            android:contentDescription="@string/meus_grupos"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_exibir_grupo"
+            android:onClick="buttonExibirGrupo"/>
+
+        <ImageButton
+            android:id="@+id/criar_grupo"
+            android:contentDescription="@string/meus_grupos"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/exibir_grupo"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/button_criar_grupo"
+            android:onClick="buttonCriarGrupo"/>
+
+        <ImageButton
+            android:contentDescription="@string/meus_grupos"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/criar_grupo"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/button_editar_excluir_grupo"
+            android:onClick="buttonEditarExcluirGrupo"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

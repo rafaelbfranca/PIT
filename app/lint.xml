@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconLocation">
+        <ignore path="src/main/res/drawable/fundo_tela_a_tela_inicial.jpg" />
+        <ignore path="src/main/res/drawable/fundo_tela_a_tela_inicial.jpg" />
+        <ignore path="src/main/res/drawable/fundo_tela_a_tela_inicial.jpg" />
+        <ignore path="src/main/res/drawable/fundo_tela_b_instrucoes.jpg" />
+    </issue>
+</lint>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_tela_a_tela_inicial"
+    tools:context="com.jockerbitgames.palpitedobrasileirao.A_menu_inicial"
+    tools:ignore="Overdraw">
+
+    <ImageButton
+        android:contentDescription="@string/palpites_e_grupos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/resultados_dos_jogos"
+        android:background="@drawable/button_palpites_e_grupos"
+        android:onClick="buttonPalpitesGrupos"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ImageButton
+        android:id="@+id/resultados_dos_jogos"
+        android:contentDescription="@string/resultados_dos_jogos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="70dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/button_resultados_dos_jogos"
+        android:onClick="buttonResultadosJogos"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ImageButton
+        android:contentDescription="@string/tabela_classificacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/resultados_dos_jogos"
+        android:background="@drawable/button_tabela_de_classificacao"
+        android:onClick="buttonTabelaClassificacao"
+        tools:ignore="UsingOnClickInXml" />
+
+</RelativeLayout>

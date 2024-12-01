@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_tela_d_serie"
+    android:focusableInTouchMode="true"
+    tools:context="com.jockerbitgames.palpitedobrasileirao.D_serie"
+    tools:ignore="Overdraw">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adsSerie"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/active_ad_unit_ID_banner_4_serie"/>
+
+    <TextView
+        android:id="@+id/series"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/series"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#42A5F5"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total_seus_pontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/campo_nulo"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#42A5F5"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#66000000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/palpite"
+            android:textColor="#FFAB00"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/acertos"
+            android:textColor="#FFAB00"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/pts"
+            android:textColor="#FFAB00"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#66000000">
+
+            <TextView
+                android:id="@+id/seus_placares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/seus_placares"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/quantidadePlacar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/time_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/pontuacaoPlacar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/quantidadePtsCampeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="80dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/seus_vencedores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seus_placares"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/seus_vencedores"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantidadeVencedor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantidadePlacar"
+                android:layout_toEndOf="@id/time_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pontuacaoVencedor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pontuacaoPlacar"
+                android:layout_toEndOf="@id/quantidadePtsCampeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="80dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/seus_empates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seus_vencedores"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/seus_empates"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantidadeEmpate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantidadeVencedor"
+                android:layout_toEndOf="@id/time_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pontuacaoEmpate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pontuacaoVencedor"
+                android:layout_toEndOf="@id/quantidadePtsCampeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="80dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time_campeao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seus_empates"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/time_campeao"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantidadeTimeCampeao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantidadeEmpate"
+                android:layout_toEndOf="@id/time_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pontuacaoTimeCampeao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pontuacaoEmpate"
+                android:layout_toEndOf="@id/quantidadePtsCampeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="80dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pontos_campeao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/pontos_campeao"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantidadePtsCampeao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantidadeTimeCampeao"
+                android:layout_toEndOf="@id/time_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pontuacaoPtsCampeao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pontuacaoTimeCampeao"
+                android:layout_toEndOf="@id/quantidadePtsCampeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="80dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/saldo_campeao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pontos_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/saldo_campeao"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantidadeSgCampeao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantidadePtsCampeao"
+                android:layout_toEndOf="@id/time_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pontuacaoSgCampeao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pontuacaoPtsCampeao"
+                android:layout_toEndOf="@id/quantidadePtsCampeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="80dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/libertadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/saldo_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/libertadores"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantidadeLibertadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantidadeSgCampeao"
+                android:layout_toEndOf="@id/time_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pontuacaoLibertadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pontuacaoSgCampeao"
+                android:layout_toEndOf="@id/quantidadePtsCampeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="80dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sulamericana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/libertadores"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/sulamericana"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantidadeSulamericana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantidadeLibertadores"
+                android:layout_toEndOf="@id/time_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pontuacaoSulamericana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pontuacaoLibertadores"
+                android:layout_toEndOf="@id/quantidadePtsCampeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="80dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/acesso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sulamericana"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/acesso"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantidadeAcesso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantidadeSulamericana"
+                android:layout_toEndOf="@id/time_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pontuacaoAcesso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pontuacaoSulamericana"
+                android:layout_toEndOf="@id/quantidadePtsCampeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="80dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rebaixados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acesso"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/rebaixados"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantidadeRebaixados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantidadeAcesso"
+                android:layout_toEndOf="@id/time_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pontuacaoRebaixados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pontuacaoAcesso"
+                android:layout_toEndOf="@id/quantidadePtsCampeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="80dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/time_lanterna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rebaixados"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/time_lanterna"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantidadeTimeLanterna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantidadeRebaixados"
+                android:layout_toEndOf="@id/time_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pontuacaoTimeLanterna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pontuacaoRebaixados"
+                android:layout_toEndOf="@id/quantidadePtsCampeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="80dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pontos_lanterna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_lanterna"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/pontos_lanterna"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantidadePtsLanterna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantidadeTimeLanterna"
+                android:layout_toEndOf="@id/time_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pontuacaoPtsLanterna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pontuacaoTimeLanterna"
+                android:layout_toEndOf="@id/quantidadePtsLanterna"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="80dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/saldo_lanterna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pontos_lanterna"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/saldo_lanterna"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/quantidadeSgLanterna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/quantidadePtsLanterna"
+                android:layout_toEndOf="@id/time_campeao"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="50dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pontuacaoSgLanterna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pontuacaoPtsLanterna"
+                android:layout_toEndOf="@id/quantidadeSgLanterna"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="80dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/campo_nulo"
+                android:textColor="#FFAB00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

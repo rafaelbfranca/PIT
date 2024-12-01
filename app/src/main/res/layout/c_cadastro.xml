@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_tela_c_cadastro"
+    tools:context="com.jockerbitgames.palpitedobrasileirao.C_cadastro"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:id="@+id/cadastro"
+        android:contentDescription="@string/cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/cadastro"
+        android:textColor="@color/yellow200"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/dadosCadastroScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/meu_apelido"
+                android:textColor="@color/yellow200"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/palpiteiro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                android:hint="Escreva seu apelido"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:padding="2dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="Autofill,HardcodedText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/meu_time"
+                android:textColor="@color/yellow200"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/time_do_coracao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                android:hint="@string/time_do_coracao"
+                android:textColor="@color/black"
+                android:nextFocusDown="@id/codigo_do_pais"
+                android:inputType="text"
+                android:padding="2dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="Autofill" />
+
+            <LinearLayout
+                android:id="@+id/codigos_pais_ddd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/codigo_do_pais"
+                        android:textColor="@color/yellow200"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/codigo_do_pais"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="48dp"
+                        android:minHeight="48dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:hint="55 para o Brasil"
+                        android:textColor="@color/black"
+                        android:imeOptions="actionNext"
+                        android:nextFocusRight="@id/ddd_do_cel"
+                        android:inputType="numberSigned"
+                        android:padding="2dp"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        tools:ignore="Autofill,HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/codigo_de_area"
+                        android:textColor="@color/yellow200"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ddd_do_cel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="48dp"
+                        android:minHeight="48dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:hint="@string/ddd_cel"
+                        android:textColor="@color/black"
+                        android:inputType="number"
+                        android:padding="2dp"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        tools:ignore="Autofill" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/numero"
+                android:textColor="@color/yellow200"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/meu_numero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                android:hint="Número do celular"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:padding="2dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/email"
+                android:textColor="@color/yellow200"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/meu_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_gravity="center"
+                android:background="#FFFFFF"
+                android:hint="E-mail válido que você use"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                tools:ignore="Autofill,HardcodedText" />
+
+            <ImageButton
+                android:id="@+id/saveButton"
+                android:contentDescription="@string/salvar"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/button_salvar"
+                android:onClick="buttonSalvar"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/verificaErroScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/verificaErroQuestao"
+                android:textColor="@color/yellow200"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/verificaErroCheckbox01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:background="@color/white"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/verificaErroCheckbox01"
+                android:contentDescription="@string/verificaErroCheckbox01"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/verificaErroCheckbox02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:background="@color/white"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/verificaErroCheckbox02"
+                android:contentDescription="@string/verificaErroCheckbox02"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/verificaErroCheckbox03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:background="@color/white"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/verificaErroCheckbox03"
+                android:contentDescription="@string/verificaErroCheckbox03"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/numeroNovoScroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/numero_antigo"
+                android:textColor="@color/yellow200"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/codigo_do_pais"
+                        android:textColor="@color/yellow200"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/codigo_do_pais_antigo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="48dp"
+                        android:minHeight="48dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:hint="Código do número antigo"
+                        android:textColor="@color/black"
+                        android:imeOptions="actionNext"
+                        android:nextFocusRight="@id/ddd_do_cel_antigo"
+                        android:inputType="numberSigned"
+                        android:padding="2dp"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        tools:ignore="Autofill,HardcodedText"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/codigo_de_area"
+                        android:textColor="@color/yellow200"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ddd_do_cel_antigo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="48dp"
+                        android:minHeight="48dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:hint="DDD do número antigo"
+                        android:textColor="@color/black"
+                        android:nextFocusDown="@id/numeroAntigoEdit"
+                        android:inputType="number"
+                        android:padding="2dp"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        tools:ignore="Autofill,HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/numeroAntigoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:background="@color/white"
+                android:hint="@string/numero_antigo"
+                android:nextFocusDown="@id/codigo_do_pais_novo"
+                android:inputType="phone"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/numero_novo"
+                android:textColor="@color/yellow200"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/codigo_do_pais"
+                        android:textColor="@color/yellow200"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/codigo_do_pais_novo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="48dp"
+                        android:minHeight="48dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:hint="Código do número novo"
+                        android:textColor="@color/black"
+                        android:imeOptions="actionNext"
+                        android:nextFocusRight="@id/ddd_do_cel_novo"
+                        android:inputType="numberSigned"
+                        android:padding="2dp"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        tools:ignore="Autofill,HardcodedText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/codigo_de_area"
+                        android:textColor="@color/yellow200"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/ddd_do_cel_novo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minWidth="48dp"
+                        android:minHeight="48dp"
+                        android:layout_gravity="center"
+                        android:background="#FFFFFF"
+                        android:hint="DDD do número novo"
+                        android:textColor="@color/black"
+                        android:nextFocusDown="@id/numeroNovoEdit"
+                        android:inputType="number"
+                        android:padding="2dp"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        tools:ignore="Autofill,HardcodedText" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/numeroNovoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_margin="20dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:background="@color/white"
+                android:hint="@string/numero_novo"
+                android:inputType="phone"
+                tools:ignore="Autofill"/>
+
+            <ImageButton
+                android:contentDescription="@string/enviar_button"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_gravity="center"
+                android:src="@drawable/button_enviar"
+                android:onClick="buttonAtualizar"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

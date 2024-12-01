@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jockerbitgames.palpitedobrasileirao.G_tabela_classificacao">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <TableRow
+            android:id="@+id/linhaTabela"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/posicaoTimeHeader"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginStart="10dp"
+                android:text="@string/posicao"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/nomeTimeHeader"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textAlignment="viewStart"
+                android:text="@string/nome_time"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/pontosTimeHeader"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginEnd="10dp"
+                android:text="@string/Pts"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/jogosTimeHeader"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginEnd="10dp"
+                android:text="@string/J"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/vitoriasTimeHeader"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginEnd="10dp"
+                android:text="@string/V"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/empatesTimeHeader"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginEnd="10dp"
+                android:text="@string/E"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/derrotasTimeHeader"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginEnd="10dp"
+                android:text="@string/D"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/golsProTimeHeader"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginEnd="10dp"
+                android:text="@string/GP"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/golsContraTimeHeader"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginEnd="10dp"
+                android:text="@string/GC"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/saldoGolsTimeHeader"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginEnd="10dp"
+                android:text="@string/SG"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/cAmarelosTimeHeader"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginEnd="10dp"
+                android:text="@string/CA"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/cVermelhosTimeHeader"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginEnd="10dp"
+                android:text="@string/CV"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/penaltisTimeHeader"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:layout_marginEnd="10dp"
+                android:text="@string/penaltis"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

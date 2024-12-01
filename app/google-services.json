@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "431493396422",
+    "firebase_url": "https://palpitebr-eaf85.firebaseio.com",
+    "project_id": "palpitebr-eaf85",
+    "storage_bucket": "palpitebr-eaf85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431493396422:android:c829436d44e864e8f6e4c7",
+        "android_client_info": {
+          "package_name": "com.jockerbitgames.palpitedobrasileirao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431493396422-dmk03fncudsklkl5nr1040pu7m3uidt2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jockerbitgames.palpitedobrasileirao",
+            "certificate_hash": "12e5ea41af31d12777110ea9aa2fb02167523873"
+          }
+        },
+        {
+          "client_id": "431493396422-gi245fo20uleq9lg2peekgfjvg27d5sl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRuZUzNGdAX1Q_N45pLbUJ-Gy6ZLuHmvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431493396422-gi245fo20uleq9lg2peekgfjvg27d5sl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

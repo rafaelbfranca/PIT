@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_tela_f_ver_meus_grupos"
+    tools:context="com.jockerbitgames.palpitedobrasileirao.F_exibir_grupos"
+    tools:ignore="Overdraw">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adsExibirGrupos"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/active_ad_unit_ID_banner_6_exibirGrupos"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/exibir_grupos"
+        android:textColor="@color/light_GreenA100"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/escolha_o_grupo"
+        android:textColor="@color/light_GreenA100"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/dropdown_grupo_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginStart="5dp"
+        android:spinnerMode="dropdown"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:divider="@null"/>
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <ImageButton
+            android:contentDescription="@string/outras_infos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/button_outras_infos"
+            android:onClick="showOutrasInfos"
+            tools:ignore="UsingOnClickInXml" />
+    </RelativeLayout>
+
+</LinearLayout>

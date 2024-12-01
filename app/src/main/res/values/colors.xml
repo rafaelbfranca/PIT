@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="cor_text_palpites">#FFFFFF</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="black">#000000</color>
+
+    <color name="blue500">#2196F3</color>
+    <color name="blue50">#E3F2FD</color>
+
+    <color name="green100">#C8E6C9</color>
+    <color name="green900">#1B5E20</color>
+
+    <color name="light_GreenA100">#CCFF90</color>
+
+    <color name="orange400">#FFA726</color>
+    <color name="orange700">#F57C00</color>
+
+    <color name="redA400">#FF1744</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="yellow200">#FFF59D</color>
+    <color name="yellow600">#FDD835</color>
+    <color name="yellowA200">#FFFF00</color>
+
+</resources>

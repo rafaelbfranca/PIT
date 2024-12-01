@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_tela_a_tela_inicial"
+    tools:context="com.jockerbitgames.palpitedobrasileirao.Z04_calcular_pontos"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/animation_ball"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Calculando"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#42A5F5"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/animation_ball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ball_jumping"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/animation_ball" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animation_ball"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Seus Pontos"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#42A5F5"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

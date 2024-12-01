@@ -1,0 +1,227 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <array name="series_array">
+        <item>Série A</item>
+        <item>Série B</item>
+        <item>Série C</item>
+        <item>Série D</item>
+    </array>
+
+    <!--AdMob IDs de Teste-->
+<!---->
+    <string name="active_AdMob_app_ID">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="active_ad_unit_ID_interstitial_1_menuInicial">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="active_ad_unit_ID_banner_1_telaInicial">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_2_instrucoes">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_3_cadastro">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_4_serie">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_5_meusGrupos">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_6_exibirGrupos">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_7_resultadoJogos">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_8_classificacao">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_9_meusPalpitesSerieA">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_10_meusPalpitesSerieB">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_11_meusPalpitesSerieC">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_12_meusPalpitesSerieD">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_13_convitesEnviados">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_14_convitesRecebidos">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_15_criarConvite">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_16_criarGrupos">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_17_enviarMensagens">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_18_editExcludGrupos">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_19_editarGrupos">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_20_editarStatus">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_21_excluirPalpiteiros">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_22_palpitarJogosSerieA">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_23_palpitarJogosSerieB">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_24_palpitarJogosSerieC">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_25_palpitarJogosSerieD">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="active_ad_unit_ID_banner_26_suporte">ca-app-pub-3940256099942544/6300978111</string>
+
+
+    <!--AdMob IDs Live-->
+<!--
+    <string name="active_AdMob_app_ID">ca-app-pub-2825975671162909~8196946499</string>
+    <string name="active_ad_unit_ID_interstitial_1_menuInicial">ca-app-pub-2825975671162909/5903392431</string>
+    <string name="active_ad_unit_ID_banner_1_telaInicial">ca-app-pub-2825975671162909/3441838487</string>
+    <string name="active_ad_unit_ID_banner_2_instrucoes">ca-app-pub-2825975671162909/8952760433</string>
+    <string name="active_ad_unit_ID_banner_3_cadastro">ca-app-pub-2825975671162909/6200999235</string>
+    <string name="active_ad_unit_ID_banner_4_serie">ca-app-pub-2825975671162909/5915533558</string>
+    <string name="active_ad_unit_ID_banner_5_meusGrupos">ca-app-pub-2825975671162909/5526211812</string>
+    <string name="active_ad_unit_ID_banner_6_exibirGrupos">ca-app-pub-2825975671162909/3179605290</string>
+    <string name="active_ad_unit_ID_banner_7_resultadoJogos">ca-app-pub-2825975671162909/2203519253</string>
+    <string name="active_ad_unit_ID_banner_8_classificacao">ca-app-pub-2825975671162909/2004208700</string>
+    <string name="active_ad_unit_ID_banner_9_meusPalpitesSerieA">ca-app-pub-2825975671162909/1812637013</string>
+    <string name="active_ad_unit_ID_banner_10_meusPalpitesSerieB">ca-app-pub-2825975671162909/9889318023</string>
+    <string name="active_ad_unit_ID_banner_11_meusPalpitesSerieC">ca-app-pub-2825975671162909/7994901986</string>
+    <string name="active_ad_unit_ID_banner_12_meusPalpitesSerieD">ca-app-pub-2825975671162909/2742575301</string>
+    <string name="active_ad_unit_ID_banner_13_convitesEnviados">ca-app-pub-2825975671162909/5177166957</string>
+    <string name="active_ad_unit_ID_banner_14_convitesRecebidos">ca-app-pub-2825975671162909/2359431928</string>
+    <string name="active_ad_unit_ID_banner_15_criarConvite">ca-app-pub-2825975671162909/4636991347</string>
+    <string name="active_ad_unit_ID_banner_16_criarGrupos">ca-app-pub-2825975671162909/9697746335</string>
+    <string name="active_ad_unit_ID_banner_17_enviarMensagens">ca-app-pub-2825975671162909/4546611560</string>
+    <string name="active_ad_unit_ID_banner_18_editExcludGrupos">ca-app-pub-2825975671162909/6981203217</string>
+    <string name="active_ad_unit_ID_banner_19_editarGrupos">ca-app-pub-2825975671162909/9415794863</string>
+    <string name="active_ad_unit_ID_banner_20_editarStatus">ca-app-pub-2825975671162909/2940766292</string>
+    <string name="active_ad_unit_ID_banner_21_excluirPalpiteiros">ca-app-pub-2825975671162909/2275671447</string>
+    <string name="active_ad_unit_ID_banner_22_palpitarJogosSerieA">ca-app-pub-2825975671162909/7336426432</string>
+    <string name="active_ad_unit_ID_banner_23_palpitarJogosSerieB">ca-app-pub-2825975671162909/9771018088</string>
+    <string name="active_ad_unit_ID_banner_24_palpitarJogosSerieC">ca-app-pub-2825975671162909/6688439618</string>
+    <string name="active_ad_unit_ID_banner_25_palpitarJogosSerieD">ca-app-pub-2825975671162909/8074793039</string>
+    <string name="active_ad_unit_ID_banner_26_suporte">ca-app-pub-2825975671162909/3943976339</string>
+-->
+
+    <!--Toasts-->
+    <string name="palpiteSalvo"> Palpite salvo.</string>
+
+    <!--Gerais-->
+    <string name="app_name">Palpite Do Brasileirão</string>
+    <string name="instrucoes">Instruções</string>
+    <string name="cadastro">Meu Cadastro</string>
+    <string name="sair">Fechar</string>
+    <string name="atualizar_dados">Atualizar Dados</string>
+    <string name="voltar">Voltar</string>
+    <string name="tela_inicial">Começa o Jogo</string>
+    <string name="outra_serie">Escolher Série:</string>
+    <string name="exibir_grupos">Exibir Grupos</string>
+    <string name="series">Série</string>
+    <string name="meus_grupos">Meus Grupos</string>
+    <string name="tabela_classificacao">Tabela de Classificação</string>
+    <string name="meus_palpites">Meus Palpites</string>
+    <string name="meus_palpites_serie_a">Meus Palpites Série A</string>
+    <string name="meus_palpites_serie_b">Meus Palpites Série B</string>
+    <string name="meus_palpites_serie_c">Meus Palpites Série C</string>
+    <string name="meus_palpites_serie_d">Meus Palpites Série D</string>
+    <string name="criar_grupos">Criar Grupos</string>
+    <string name="edit_exclud_grupos">Editar/Excluir Grupos</string>
+    <string name="editar_grupos">Editar Grupos</string>
+    <string name="total_pontos">Total Pontos</string>
+    <string name="seus_pontos">Seus Pontos</string>
+    <string name="serie_a">Série A</string>
+    <string name="serie_b">Série B</string>
+    <string name="serie_c">Série C</string>
+    <string name="serie_d">Série D</string>
+    <string name="time_do_coracao">Time do Coração</string>
+    <string name="salvar">Salvar</string>
+    <string name="seus_placares">Placares</string>
+    <string name="seus_vencedores">Vencedores</string>
+    <string name="seus_empates">Empates</string>
+    <string name="time_campeao">Time Campeão</string>
+    <string name="saldo_campeao">SG Campeão</string>
+    <string name="pontos_campeao">Pts Campeão</string>
+    <string name="time_lanterna">Time Lanterna</string>
+    <string name="pontos_lanterna">Pts Lanterna</string>
+    <string name="saldo_lanterna">SG Lanterna</string>
+    <string name="libertadores">Libertadores</string>
+    <string name="sulamericana">Sulamericana</string>
+    <string name="rebaixados">Rebaixados</string>
+    <string name="campo_nulo">--</string>
+    <string name="pts">pts</string>
+    <string name="palpite">Palpite</string>
+    <string name="acertos">Acertos</string>
+    <string name="x">X</string>
+    <string name="data">Data</string>
+    <string name="local">Local</string>
+    <string name="horario">Horário</string>
+    <string name="mandante">mandante</string>
+    <string name="visitante">visitante</string>
+    <string name="resultado">Resultado</string>
+    <string name="pontosNoJogo">Pontos neste jogo: </string>
+    <string name="escolher_fase">Fase:</string>
+    <string name="escolher_grupo">Grupo:</string>
+    <string name="escolher_rodada">Rodada:</string>
+    <string name="escolher_jogo">Jogo:</string>
+    <string name="palpitePontosTimeCampeao">palpitePontosTimeCampeao</string>
+    <string name="palpiteSaldoTimeCampeao">palpiteSaldoTimeCampeao</string>
+    <string name="palpitePontosTimeLanterna">palpitePontosTimeLanterna</string>
+    <string name="palpiteSaldoTimeLanterna">palpiteSaldoTimeLanterna</string>
+    <string name="palpitar_jogos">Palpitar Jogos</string>
+    <string name="escolher_o_ano">Escolher o ano</string>
+    <string name="palpitemandante">palpitemandante</string>
+    <string name="palpitevisitante">palpitevisitante</string>
+    <string name="acesso">Acesso</string>
+    <string name="animation_ball">animation_ball</string>
+    <string name="J">J</string>
+    <string name="Pts">Pts</string>
+    <string name="V">V</string>
+    <string name="E">E</string>
+    <string name="D">D</string>
+    <string name="GP">GP</string>
+    <string name="GC">GC</string>
+    <string name="SG">SG</string>
+    <string name="CA">CA</string>
+    <string name="CV">CV</string>
+    <string name="nome_do_grupo">Nome do grupo</string>
+    <string name="o_vencedor_ganha">O palpiteiro vencedor ganha:</string>
+    <string name="premio_combinado">Registre aqui o prêmio combinado.</string>
+    <string name="palpiteiros">Convidar Palpiteiros</string>
+    <string name="mensagemConviteZap">Você foi convidado pelo remetente desta mensagem para participar de um grupo no aplicativo Palpite do Brasileirão.</string>
+    <string name="mensagemConviteSms">Participe do App Palpite do Brasileirão:</string>
+    <string name="series_palpitadas">Para este grupo valerão os palpites feitos nas séries:</string>
+    <string name="detalhado_serie_a">detalhadoSerieA</string>
+    <string name="detalhado_serie_b">detalhadoSerieB</string>
+    <string name="detalhado_serie_c">detalhadoSerieC</string>
+    <string name="detalhado_serie_d">detalhadoSerieD</string>
+    <string name="escalar_selecao">Escalar a Seleção</string>
+    <string name="ano_do_campeonato">Ano do campeonato</string>
+    <string name="meu_apelido">Meu Apelido</string>
+    <string name="meu_time">Meu Time</string>
+    <string name="numero">Meu Número</string>
+    <string name="aviso_cadastro_incompleto">Complete o seu cadastro para participar de grupos.</string>
+    <string name="escolha_o_grupo">Escolha o Grupo</string>
+    <string name="outras_infos">Outras informações</string>
+    <string name="confirmacaoExcluirGrupo">Você realmente quer excluir o grupo</string>
+    <string name="confirmacaoCadastroNumeroTexto1">Confira o número digitado. Após salvar, ele só poderá ser alterado com a reinstalação do App.</string>
+    <string name="confirmacaoCadastroNumeroTexto2">Use +55 DDD NNNNN-NNNN para telefones do Brasil. Se o número não for do Brasil, substitua +55 pelo código do país do número de telefone.</string>
+    <string name="confirmacaoCadastroNumeroTexto3">Confira também se o e-mail está correto, pois você receberá uma mensagem para confirmá-lo.</string>
+    <string name="confirmacaoCadastroNumeroPergunta">O número e o e-mail estão corretos?!</string>
+    <string name="editar_palpiteiros">Editar Palpiteiros</string>
+    <string name="incluir_palpiteiro">incluir_palpiteiro</string>
+    <string name="excluir_palpiteiro">Excluir palpiteiro</string>
+    <string name="editar_status">Editar Status</string>
+    <string name="email">Meu e-mail</string>
+    <string name="codigo_do_pais">Código do País</string>
+    <string name="codigo_de_area">Código de Área</string>
+    <string name="ddd_cel">Código DDD</string>
+    <string name="convites_recebidos">Convites Recebidos</string>
+    <string name="convites_enviados">Convites Enviados</string>
+    <string name="penaltis">PNT</string>
+    <string name="nome_time">Time</string>
+    <string name="posicao">Pos</string>
+    <string name="cor_legenda">Legenda:</string>
+    <string name="cor_libertadores">LIBERTADORES</string>
+    <string name="cor_sulamericana">SULAMERICANA</string>
+    <string name="cor_acesso">ACESSO</string>
+    <string name="cor_rebaixados">REBAIXADOS</string>
+    <string name="cor_lanterna">LANTERNA</string>
+    <string name="campeao">CAMPEÃO</string>
+    <string name="bloqueio_palpites_classificacoes">Esta alteração não será salva. A data limite para palpitar as classificações desta Série já passou.</string>
+    <string name="bloqueio_palpites_jogos">A data limite para palpitar este jogo já passou.</string>
+    <string name="suporte">Suporte</string>
+    <string name="suporte_orientacao_texto01">Utilize este canal para expressar sugestões, críticas, elogios ou mesmo falhas do App. Mensagens ofensivas ou desrespeitosas serão desconsideradas.</string>
+    <string name="orientacaoHint">Escreva aqui a sua mensagem.</string>
+    <string name="suporte_enviar">suporteEnviar</string>
+    <string name="verificaErroQuestao">O que você está fazendo?</string>
+    <string name="verificaErroCheckbox01">Instalando o app pela 1ª vez.</string>
+    <string name="verificaErroCheckbox02">Reinstalando o app com o mesmo nº de telefone.</string>
+    <string name="verificaErroCheckbox03">Reinstalando o app com um novo nº de telefone.</string>
+    <string name="numero_antigo">Informe o número antigo</string>
+    <string name="numero_novo">Confirme o número novo</string>
+    <string name="recuperar_backups">Recuperar Backups</string>
+    <string name="compartilhar_app">Compartilhar o app</string>
+    <string name="aviso_cobranca_operadora" tools:ignore="Typos">Compartilhe o app com seus amigos para que eles possam instalar e visualizar o seu convite. Lembre-se que dependendo do tipo de contrato do seu telefone, a operadora poderá cobrar pelo envio da mensagem.\n\nEscolha acima como enviar a mensagem:</string>
+    <string name="invite_button_sms">invite_button_sms</string>
+    <string name="invite_button_zap">invite_button_zap</string>
+    <string name="enviar_button">enviar_button</string>
+    <string name="creditos">Créditos</string>
+    <string name="atualizar_grupos">Atualizar Grupos</string>
+    <string name="alterar_cadastro">Alterar Cadastro</string>
+    <string name="resultados_dos_jogos">Resultados dos Jogos</string>
+    <string name="palpites_e_grupos">Palpites e Grupos</string>
+    <string name="rodada">Rodada</string>
+    <string name="timeMandante">Mandante</string>
+    <string name="placar_m">Placar Mandante</string>
+    <string name="placar_v">Placar Visitante</string>
+    <string name="timeVisitante">Visitante</string>
+
+</resources>

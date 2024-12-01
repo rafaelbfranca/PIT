@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_tela_j_edit_exclud_grupos"
+    tools:context="com.jockerbitgames.palpitedobrasileirao.J_edit_exclud_grupos"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/edit_exclud_grupos"
+        android:textColor="@color/orange700"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/ano_do_campeonato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/ano_do_campeonato"
+        android:textColor="@color/orange700"
+        android:textSize="50sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/escolha_o_grupo"
+        android:textColor="@color/orange700"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/dropdown_grupo_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_marginStart="5dp"
+        android:spinnerMode="dropdown"/>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+        <ImageButton
+            android:id="@+id/editar_grupo"
+            android:contentDescription="@string/meus_grupos"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_editar"
+            android:onClick="editarGrupo"/>
+
+        <ImageButton
+            android:id="@+id/excluir_grupo"
+            android:contentDescription="@string/meus_grupos"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/editar_grupo"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/button_excluir"
+            android:onClick="excluirGrupo"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

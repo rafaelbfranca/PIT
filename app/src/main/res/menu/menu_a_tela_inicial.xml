@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jockerbitgames.palpitedobrasileirao.A_tela_inicial">
+
+    <item
+        android:id="@+id/instrucoes"
+        android:title="@string/instrucoes"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/atualizar_dados"
+        android:title="@string/atualizar_dados"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/voltar"
+        android:title="@string/voltar"
+        app:showAsAction="never"/>
+
+</menu>

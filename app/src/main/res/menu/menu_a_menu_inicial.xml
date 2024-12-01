@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jockerbitgames.palpitedobrasileirao.A_menu_inicial">
+
+    <item
+        android:id="@+id/instrucoes"
+        android:title="@string/instrucoes"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/cadastro"
+        android:title="@string/cadastro"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/canalSuporte"
+        android:title="@string/suporte"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/sair"
+        android:title="@string/sair"
+        app:showAsAction="never"/>
+
+</menu>

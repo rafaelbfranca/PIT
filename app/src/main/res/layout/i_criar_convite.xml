@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_tela_i_criar_grupos"
+    android:focusableInTouchMode="true"
+    tools:context="com.jockerbitgames.palpitedobrasileirao.I_criar_convite"
+    tools:ignore="Overdraw">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/palpiteiros"
+        android:textColor="@color/blue50"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:divider="@null"
+        android:choiceMode="multipleChoice"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <SearchView
+            android:id="@+id/filtroContato"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="15dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <ImageButton
+            android:id="@+id/enviar_button"
+            android:contentDescription="@string/enviar_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button_enviar"
+            tools:ignore="NestedWeights" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
